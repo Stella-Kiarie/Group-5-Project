@@ -1,7 +1,7 @@
 # MOVIE SUCCESS ANALYSIS PROJECT 
 
 ## OVERVIEW 
-This project explores the entertainment industry as there has been rapid evolving as major plays aim to produce original contents for streaming Platforms. In the project, we leveraged movie revenue data from Box office Mojo and IMDB database to analyze the movie ratings and characteristics.  The objective of this project is to conduct a comprehensive exploratory data analysis to identify patterns, relationships and factors contributing towards a movie success within the entertainment industry. The insights and findings gathered in this project can be transalted to actionable recommendations for companies within the industry. 
+This project explores the entertainment industry as the industry has been evolving rapidly as major plays aim to produce original contents for streaming Platforms. In the project, we leveraged movie revenue data from Box office Mojo and IMDB database to analyze the movie ratings and characteristics.  The objective of this project is to conduct a comprehensive exploratory data analysis to identify patterns, relationships and factors contributing towards a movie success within the entertainment industry. The insights and findings gathered in this project can be transalted to actionable recommendations for companies within the industry. 
 
 ## Business Understanding 
 A company plans to launch a new movie studio  but has no information on the performance of various movies at the box office. For the company to remain competitive, the company needs an understanding on best movie performances to make informed investment decisions. This project will explore historical data such as movie ratings, movie revenue and movie characteristics to guide the company on which movie studio to invest in and the type of films to produce. 
@@ -18,12 +18,17 @@ Goal: To identify the key factors that drive movie box office success and to pro
 ## Data Understanding and Analysis 
 
 To achieve the goal of providing data driven insights on a new movie studio venture, two datasets were used in the project. 
-1. bom.movie_gross.csv.gz — Box Office Mojo data with revenue information.
+1. bom.movie_gross.csv.gz — Box Office Mojo data with revenue information.i.e domestic and foreign gross
 2. im.db — IMDB SQLite database containing movie information such as titles, genres, and ratings.
 
 The two datasets are relevant in the project as :
 1. BOM has revenue information for which revenue is one of our target variable
 2. IMDB contains movie attributes which are more important for our objectives
+domestic_gross , foreign gross --------- help determine movie earnings 
+
+average ratings, numvotes ---------- Determine the impact audience response on box office movie success
+runtime_minutes, genre, studion ----------insights on the production features 
+
 
 First, the IMBD database contains multiple tables, however, only the movie_basics and movie_ratings contained relevant data for our analysis. The data on movie_ratings was good as did not contain duplicates or missing values but the movie_basics contained missing values which reqiuired cleaning by dropping rows or imputing . On the other hand, the Bom revenue data was messy and required cleaning such as dealing with missing values and duplicates. 
 
@@ -33,7 +38,7 @@ Eventually, we created a merge between the bom revenue dataset and the imbd data
 ### 1. Top Performing Genres
 ![Top performing genre](images/image-1.png)
 
-From the visualization above, Adventure and Action-based genres dominate box office performance, especially when combined with elements of Drama, Fantasy, or Sci-Fi. These hybrid genres consistently attract large audiences and deliver the highest average total gross, exceeding $1 billion in some cases. This suggests that audiences prefer visually engaging, emotionally compelling, and high-concept stories making Adventure Drama and Action–Fantasy films the most profitable focus areas for a new movie studio
+From the visualization above, Adventure and Action-based genres dominate box office performance, especially when combined with elements of Drama, Fantasy, or Sci-Fi. 
 
 ### 2. Ratings as a factor in  Box Office success
 
@@ -54,3 +59,17 @@ The visualizations shows that a few major studios dominate the box office market
 
 ## Conclusion
 To conclude,  exploratory data analysis reveals that movie success is largely driven by genre choice, audience ratings, and production strategy. High-grossing films typically belong to popular hybrid genres, are well-rated by audiences, and have optimal runtimes. These findings suggest that creativity, quality, and data-driven decision-making should guide the company’s new movie production strategy.
+
+## Recommendations 
+Following the critical analysis on Box office Mojo and IMDB, the following recommendatio would be best strategies to plan when venturing into the movie studio business:
+1. Invest in the High-Performing Genres
+From the anlyssis Adventure, Action, and Fantasy films especially hybrid genres that combine emotional storytelling elements such as Drama or fantasy. These genres are associated with the highest box office returns.
+
+2. Prioritize Quality and Audience Satisfaction
+Invest in strong storytelling, character development, and production quality. The analysis shows that movies with IMDB ratings above 6.0 tend to earn significantly more revenue, proving that audience approval directly drives profitability.
+
+3. Optimize Movie Runtime
+Aim for runtimes between 90 and 130 minutes. This range achieves the best balance between story depth and audience attention, leading to better commercial success.
+
+4. Collaborate with Established Studios and Talent
+Partnering with or hiring talent from top-performing studios (like HC, P/DW, and BV) can provide valuable expertise in production, marketing, and distribution increasing the studio’s chances of success in the competitive film industry
