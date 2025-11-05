@@ -31,7 +31,7 @@ Eventually, we created a merge between the bom revenue dataset and the imbd data
 
 ### Visualizations 
 1. Top Performing Genres
-![alt text](image-1.png)
+![Top performing genre](images/image-1.png)
 
 
 
