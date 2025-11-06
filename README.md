@@ -1,42 +1,71 @@
-## MOVIE SUCCESS ANALYSIS PROJECT
+AVIATION RISK ASSESSMENT
+A detailed analysis of aviation data by NTSB Aviation Accident Data (1962–2023) to determine the Aircraft with the lowest risks
+Overview
+The company has been looking forward to diversifying its operations into the aviation industry. However, there is no information available on the potential risks associated with this new venture. Therefore, this project aims to analyze historical aviation accident data utilizing the NTSB data from 1962 to 2023 to identify aircraft models, makes, and engines that have the lowest risk profile based on injury fatalities. The results of this data analysis should assist the Head of Aviation Division in determining which is the most appropriate venture within the aviation industry
 
-### OVERVIEW
+Business Understanding
+The company's stakeholders have sought to venture into the aviation industry. The aviation industry, however, is exposed to significant risks, one of which is the risk of accidents. For success within this industry, the company needs to understand the accident risks associated with different aircraft makes and models.
 
-This project explores the entertainment industry as the industry has been evolving rapidly as major plays aim to produce original contents for streaming Platforms. In the project, we leveraged movie revenue data from Box office Mojo and IMDB database to analyze the movie ratings and characteristics.
+The NTSB provides a relevant dataset collected over a period of time that new companies can rely on for better decision-making as they venture into the aviation industry. Research shows that data-driven decision-making results in better and informed decisions.
 
-### Business Understanding
+Project Objectives
+*To analyze Aircraft Makes with the Lowest Fatality Rates
 
-A company plans to launch a new movie studio but has no information on the performance of various movies at the box office. For the company to remain competitive, the company needs an understanding on best movie performances to make informed investment decisions. This project will explore historical data such as movie ratings, movie revenue and movie characteristics to guide the company on which movie studio to invest in and the type of films to produce.
+*To identify which Aircraft Engine types are more prone to damage in case of accidents
 
-Project Goal: To identify the key factors that drive movie box office success and to provide data driven insights to guide in the new movie studio and production venture.
+*Which Purpose Flights are less risky to fatal accidents
 
-### Business Questions
+DATA UNDERSTANDING
+Data Source: Aviation Data from 1962 to 2023 on civil aviation accidents across accidents and selected incidents across the United States and international waters
 
-Which are the highest performing movie genres?
-What is the impact of audience ratings on box office performance?
-What are the key factors that determine movie success? factors such as runtime, genre and release timing
-How have the box office performance changed over the years?
+Data from the National Transportation Safety Board
 
-### Data Understanding and Analysis
-To achieve the goal of providing data driven insights on a new movie studio venture, two datasets were used in the project.
+The dataset contains 90348 rows of data and 31 columns of data. After exploring the dataset, some rows containing missing values had to be dropped, and some columns. Remaining with 27580 rows and 14 relevant columns for the data analysis
 
-bom.movie_gross.csv.gz — Box Office Mojo data with revenue information.i.e domestic and foreign gross
-im.db — IMDB SQLite database containing movie information such as titles, genres, and ratings.
+Some significant columns for the company’s risk assessment include:
 
-###Hypothesis Testing
+Aircraft Make- different aircraft makes, i.e., Cessna,
 
-To determine whether there is a significant relationship between between movie genres and box office success, we conducted a Chi-Square Test of independence.
+Aircraft Model- different makes such as Cessna, PIPER, Beech, BOEING
 
-Null Hypothesis (H₀): There is no relationship between movie genre and box office success.
+Aircraft Damage- extent of damage substantial, destroyed, and others not given
 
-Alternative Hypothesis (H₁): There is a relationship between movie genre and box office succes
+Purpose of Flight- various uses of flights ( personal, business, skydiving, executive,
+firefighting, etc.
 
-The results of the Chi-Square are shown below: Chi-Square Test Results
+Total Fatal Injuries- total number of fatal injuries in a specific accident event
 
-Chi2 Statistic: 736.6494756816546
+Injury Severity
 
-p-value: 1.0623260172850567e-34
+Data Analysis and Visualizations
+Which Aircraft make has the lowest total fatal injuries?
+From the visual on the top 10 makes by total fatal injuries, it is evident that Cessna has the highest risk of fatal injuries, with models such as FOKKER having the lowest fatality
 
-Degrees of Freedom: 321
+fatality_bymake
 
-From the results, the Chi-Square-Test has a statistic of 736.6 and a p- value of 1 0623260172850567e-34 which is below the significance level of 0.05. Therefore, we reject the null hypothesis and conclude that there is a significant relationship between movie genre and box office success.
+Recommendation It is recommended that, as the Head of Aviation Division, Fokker aircraft make are advised because they have low total fatal injuries.
+
+Which flight purposes are less exposed to fatal injuries?
+From the data analysis, aircraft used for personal purposes are highly exposed to fatal injuries. So, the company should not venture into air travel used for personal reasons.
+
+flight purpose
+
+The company should consider venturing into the aviation industry for other purposes, such as Airdrop, Firefighting, Business, Skydiving, and corporate purposes
+
+Which engine types have the lowest damage risk?
+Aircraft with Reciprocating engines have the highest risk of substantial damage in accidents. Most engines have a moderate risk of damage, such as the Electric, Turbo Prop, and Turbo Shaft.
+
+Engine type
+
+However, an aircraft such as a Turbo Fan has a minimal risk of exposure to damage.
+
+Conclusion and Recommendations
+To conclude: From the insights gathered from the aviation action dataset by NTSB, there are key factors that must be considered before venturing into the new industry. Through the analysis, I identified FOKKER and DE HAVILLAND as the best aircraft makers with Turbo fan engines. Additionally, aircraft for private enterprise are highly discouraged, as aircraft used for personal purposes have had the highest fatality injuries.
+
+This data-driven insight is a great starting point for aviation industry analysis. However, to justify the decision, further analysis is required to determine factors such as performance, reliability, operational aspects, and regulatory compliance.
+
+Next steps
+Gather public and private operational data within the aviation industry to define other risk factors associated with aviation industry ventures. Consider utilizing the most recent datasets. With revolution, data from 1962 is too outdated to refer to for decision-making. Develop models to predict the performance of the aviation industry in the next few
+
+Interactive Dashboard
+(https://public.tableau.com/app/profile/stella.wanjiru/viz/PROJECT_17597320407240/Dashboard1?publish=yes) Interactive Dashboard
