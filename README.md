@@ -35,6 +35,25 @@ First, the IMBD database contains multiple tables, however, only the movie_basic
 
 Eventually, we created a merge between the bom revenue dataset and the imbd datasets to generated a cleaned dataset for our analysis. The merge generated a data with 3109 rows and 13 columns. 
 
+## Hypothesis Testing 
+To determine whether there is a significant relationship between between movie genres and box office success, we conducted a Chi-Square Test  of independence. 
+
+Null Hypothesis (H₀): There is no relationship between movie genre and box office success.
+
+Alternative Hypothesis (H₁): There is a relationship between movie genre and box office succes
+
+The results of the Chi-Square are shown below:
+Chi-Square Test Results
+
+Chi2 Statistic: 736.6494756816546
+
+p-value: 1.0623260172850567e-34
+
+Degrees of Freedom: 321
+
+From the results, the Chi-Square-Test has a statistic of 736.6  and a p- value of 
+1 0623260172850567e-34 which is below the significance level of 0.05. Therefore, we reject the null hypothesis and conclude that there is a significant relationship between movie genre and box office success. 
+
 ## Visualizations 
 ### 1. Top Performing Genres
 ![Top performing genre](images/image-1.png)
