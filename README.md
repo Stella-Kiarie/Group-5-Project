@@ -50,6 +50,9 @@ The scatter plot shows a positive relationship between audience ratings and tota
 
 The visualization below reveals a slight positive relationship between runtime and total box office gross. Movies with runtimes between 90 and 130 minutes generally achieve higher earnings, suggesting that audiences prefer films that are long enough to develop a story but not excessively lengthy. Extremely short or overly long films tend to earn less, indicating that finding an optimal runtime balance is key to maximizing box office performance. 
 
+Here is a link to the tableau visualization: https://public.tableau.com/app/profile/kumati.dapash5591/viz/MoviesSuccessAnalysis/MovieSuccessAnalysis?publish=yes
+
+
 ![Movie_Runtime](images/runtime.png)
 
 ### 4. Top performing Studios
