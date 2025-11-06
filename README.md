@@ -50,12 +50,15 @@ The scatter plot shows a positive relationship between audience ratings and tota
 
 The visualization below reveals a slight positive relationship between runtime and total box office gross. Movies with runtimes between 90 and 130 minutes generally achieve higher earnings, suggesting that audiences prefer films that are long enough to develop a story but not excessively lengthy. Extremely short or overly long films tend to earn less, indicating that finding an optimal runtime balance is key to maximizing box office performance. 
 
+
 ![Movie_Runtime](images/runtime.png)
 
 ### 4. Top performing Studios
 ![top studios](images/studios.png)
 
 The visualizations shows that a few major studios dominate the box office market. Studios such as HC, P/DW, and BV achieve the highest average total gross, far outperforming others. This suggests that established studios benefit from larger production budgets, strong marketing strategies, and brand loyalty. Meanwhile, smaller studios like Sony, Universal, and Paramount still maintain consistent performance but on a smaller scale. Overall, studio reputation and financial capacity play a significant role in driving box office success
+
+Here is a link to the tableau visualization: https://public.tableau.com/app/profile/kumati.dapash5591/viz/MoviesSuccessAnalysis/MovieSuccessAnalysis?publish=yes
 
 ## Conclusion
 To conclude,  exploratory data analysis reveals that movie success is largely driven by genre choice, audience ratings, and production strategy. High-grossing films typically belong to popular hybrid genres, are well-rated by audiences, and have optimal runtimes. These findings suggest that creativity, quality, and data-driven decision-making should guide the company’s new movie production strategy.
